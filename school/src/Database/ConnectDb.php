@@ -8,7 +8,7 @@ class ConnectDb {
    * ConnectDb constructor.
    */
   public function __construct() {
-    include_once './config/config.php';
+    include_once dirname(dirname(__DIR__)) . '/config/config.php';
   }
 
   public function connectToDatabase() {
